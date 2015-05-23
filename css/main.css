@@ -35,7 +35,8 @@ body {
   top: 4%; }
 
 .set {
-  left: 4%; }
+  left: 4%;
+  font-family: "Novecento Bold"; }
 
 .time {
   right: 4%;
@@ -51,10 +52,20 @@ body {
   font-size: 0.7em;
   font-weight: 100; }
 
-h1 {
+.title {
   margin-top: 12%;
   font-size: 2.6em;
   letter-spacing: 0.2em; }
+
+.block {
+  color: slategrey; }
+
+.links {
+  font-family: "Novecento Bold";
+  font-size: 1.2em; }
+
+.hg {
+  font-size: 2.125em; }
 
 body {
   background-color: slategrey; }
@@ -78,8 +89,7 @@ body {
 .hg {
   position: absolute;
   right: 5%;
-  bottom: 25%;
-  font-size: 2.125em; }
+  bottom: 25%; }
 
 .links {
   position: absolute;

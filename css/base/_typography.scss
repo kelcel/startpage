@@ -12,6 +12,7 @@ body {
 .set {
     @extend %widget;
     left: $widget-offset;
+    font-family: $link-font;
 }
 
 .time {
@@ -32,8 +33,21 @@ body {
     font-weight: $date-font-weight;
 }
 
-h1 {
+.title {
     margin-top: $headline-margin;
     font-size: $headline-font-size;
     letter-spacing: $headline-font-spacing;
+}
+
+.block {
+    color: $block-font-color;
+}
+
+.links {
+    font-family: $link-font;
+    font-size: $link-font-size;
+}
+
+.hg {
+    font-size: $block-font-size;
 }

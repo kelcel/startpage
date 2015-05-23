@@ -29,4 +29,5 @@ $block-offset: 50px 5% 0 0;
 $block-width: 200px;
 $block-height: 300px;
 
-$link-font-size: 1.6em;
+$link-font: nth($fonts, 3);
+$link-font-size: 1.2em;

@@ -1,0 +1,23 @@
+@for $i from 1 through 3 {              // Give all block blocks default css
+    .bk-#{$i} {
+        margin: $block-offset;
+    }
+    @if $i == 3 {                       // Last block block has no right margins
+        .bk-#{$i} {
+            margin-right: 0px;
+        }
+    }
+}
+
+@each $font in $fonts {                 // Sets font familys for all available font files
+    @font-face {
+        font-family: #{$font};
+        @if $font == Telegrama {        // Telegrama uses otf format
+            $ext : '.otf';
+        }
+        @else {
+            $ext : '.ttf';
+        }
+        src: url('../font/' + $font + $ext);
+    }
+}

@@ -1,0 +1,39 @@
+body {
+    color: $bg-font-color;
+    font-family: $headline-font;
+    text-align: center;
+}
+
+%widget {
+    position: absolute;
+    top: $widget-offset;
+}
+
+.set {
+    @extend %widget;
+    left: $widget-offset;
+}
+
+.time {
+    @extend %widget;
+    right: $widget-offset;
+    font-family: $time-font;
+    font-size: $time-font-size;
+    letter-spacing: 0.3em;
+}
+
+.ampm {
+    font-size: $ampm-font-size;
+    margin-left: $ampm-offset;
+}
+
+.date {
+    font-size: $date-font-size;
+    font-weight: $date-font-weight;
+}
+
+h1 {
+    margin-top: $headline-margin;
+    font-size: $headline-font-size;
+    letter-spacing: $headline-font-spacing;
+}

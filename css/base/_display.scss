@@ -1,0 +1,48 @@
+body {
+    background-color: $bg-color;
+}
+
+.set {
+    padding: 13px;
+    border-bottom: 2px solid orange;
+}
+
+.set:hover {
+    color: $bg-color;
+    background-color: $bg-font-color;
+}
+
+.block {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: $block-bg-color;
+    color: $block-font-color;
+}
+
+.hg {
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+    font-size: $block-font-size;
+}
+
+.links {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    line-height: $block-height / 5 ;
+    display: none;
+}
+
+.block:hover .hg {
+    display: none;
+}
+
+.block:hover .links {
+   display: block;
+}

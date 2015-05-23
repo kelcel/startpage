@@ -1,0 +1,32 @@
+$ext: "";
+
+$bg-color: slategrey;
+$bg-font-color: #F0F0F0;
+
+$fonts: "Novecento", "Novecento Light", "Novecento Bold", "Telegrama" , "Silkscreen";
+$headline-font: nth($fonts, 2);
+$headline-font-size: 2.6em;
+$headline-font-spacing: 0.2em;
+
+$time-font: nth($fonts, 4);
+$time-font-size: 2.3em;
+
+$ampm-font-size: 0.5em;
+$ampm-offset: -15%;
+
+$date-font-size: 0.7em;
+$date-font-weight: 100;
+
+$widget-offset: 4%;
+
+$headline-margin: 12%;
+
+$block-bg-color: #F0F0F0;
+$block-font-color: slategrey;
+$block-font-size: 2.125em;
+$block-offset: 50px 5% 0 0;
+
+$block-width: 200px;
+$block-height: 300px;
+
+$link-font-size: 1.6em;

@@ -1,0 +1,11 @@
+@mixin animate() {
+    @-webkit-keyframes animation {
+        from { background-color: $block-bg-color;}
+        to { height: 30px; background-color: orange; }
+    }
+
+    @keyframe animation {
+        from { background-color: $block-bg-color;}
+        to { height: 10px; background-color: orange; }
+    }
+}

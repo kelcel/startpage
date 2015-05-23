@@ -15,16 +15,17 @@ body {
     font-family: $link-font;
 }
 
-.time {
+.clock {
     @extend %widget;
     right: $widget-offset;
-    font-family: $time-font;
-    font-size: $time-font-size;
+    font-family: $clock-font;
+    font-size: $clock-font-size;
     letter-spacing: 0.3em;
 }
 
 .ampm {
     font-size: $ampm-font-size;
+    letter-spacing: 0.3em;
     margin-left: $ampm-offset;
 }
 

@@ -72,6 +72,7 @@ body {
 
 .set {
   padding: 13px;
+  box-shadow: 0px -1px 1px 0px #AAA;
   border-bottom: 2px solid orange; }
 
 .set:hover {

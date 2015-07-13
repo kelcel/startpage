@@ -1,6 +1,8 @@
 @for $i from 1 through 3 {              // Give all block blocks default css
+    $initial-offset: 27%;
     .bk-#{$i} {
         margin: $block-offset;
+        left: $initial-offset + ($i - 1) * $block-width + ($i - 1) * 3.5%;
     }
     @if $i == 3 {                       // Last block block has no right margins
         .bk-#{$i} {

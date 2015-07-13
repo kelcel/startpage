@@ -5,7 +5,7 @@ body {
 .set {
     padding: 13px;
     box-shadow: 0px -1px 1px 0px #AAA;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid $accent-color;
 }
 
 .set:hover {
@@ -15,41 +15,36 @@ body {
 
 .block {
     display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 300px;
-    border-bottom: 10px solid $block-bg-color;
+    overflow: hidden;
+    position: absolute;
+    width: $block-width;
+    height: $block-height;
     background-color: $block-bg-color;
+    border-bottom: 10px solid $main-bg-color;
     color: $block-font-color;
 }
 
+.main {
+    display: block;
+    height: $block-height;
+    background-color: $main-bg-color;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
 .hg {
-    position: absolute;
-    right: 5%;
-    bottom: 25%;
+    position: relative;
+    top: 70%;
+    left: 15%;
 }
 
 .links {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 10%;
-    left: 0;
-    right: 0;
+    margin-top: 30px;
     line-height: $block-height / 5 ;
-    display: none;
 }
 
 .block:hover {
-    border-bottom: 10px solid orange;
+    border-color: $accent-color;
 }
 
-.block:hover .hg { color: orange; }
-
-//.block:hover .hg {
-    //display: none;
-//}
-
-//.block:hover .links {
-   //display: block;
-//}
+.main:hover .hg { color: $accent-color; }

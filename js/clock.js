@@ -10,6 +10,8 @@ function startTime() {
     if (hour > 12) $('.ampm').text('pm');
     else $('.ampm').text('am');
 
+    if (min < 10) min = "0" + min.toString();
+
     $('.time').text(hour + ":" + min + " ");
     $('.date').text(mon + "/" + day + "/" + year);
     var t = setTimeout(function(){startTime()}, 500);

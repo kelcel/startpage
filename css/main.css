@@ -1,11 +1,14 @@
 .bk-1 {
-  margin: 50px 5% 0 0; }
+  margin: 50px 0% 0 0;
+  left: 27%; }
 
 .bk-2 {
-  margin: 50px 5% 0 0; }
+  margin: 50px 0% 0 0;
+  left: 43.5%; }
 
 .bk-3 {
-  margin: 50px 5% 0 0; }
+  margin: 50px 0% 0 0;
+  left: 60%; }
 
 .bk-3 {
   margin-right: 0px; }
@@ -36,18 +39,13 @@ body {
 
 .set {
   left: 4%;
-  font-family: "Novecento Bold"; }
+  font-family: "Novecento"; }
 
 .clock {
   right: 4%;
   font-family: "Telegrama";
-  font-size: 2.3em;
+  font-size: 2.75em;
   letter-spacing: 0.3em; }
-
-.ampm {
-  font-size: 0.5em;
-  letter-spacing: 0.3em;
-  margin-left: -15%; }
 
 .date {
   font-size: 0.7em;
@@ -62,7 +60,7 @@ body {
   color: slategrey; }
 
 .links {
-  font-family: "Novecento Bold";
+  font-family: "Novecento";
   font-size: 1.2em; }
 
 .hg {
@@ -82,32 +80,34 @@ body {
 
 .block {
   display: inline-block;
-  position: relative;
-  width: 200px;
+  overflow: hidden;
+  position: absolute;
+  width: 13%;
   height: 300px;
+  background-color: orange;
   border-bottom: 10px solid #F0F0F0;
-  background-color: #F0F0F0;
   color: slategrey; }
 
+.main {
+  display: block;
+  height: 300px;
+  background-color: #F0F0F0;
+  overflow: hidden;
+  margin-bottom: 10px; }
+
 .hg {
-  position: absolute;
-  right: 5%;
-  bottom: 25%; }
+  position: relative;
+  top: 70%;
+  left: 15%; }
 
 .links {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 10%;
-  left: 0;
-  right: 0;
-  line-height: 60px;
-  display: none; }
+  margin-top: 30px;
+  line-height: 60px; }
 
 .block:hover {
-  border-bottom: 10px solid orange; }
+  border-color: orange; }
 
-.block:hover .hg {
+.main:hover .hg {
   color: orange; }
 
 /*# sourceMappingURL=main.css.map */

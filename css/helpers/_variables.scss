@@ -2,6 +2,7 @@ $ext: "";
 
 $bg-color: slategrey;
 $bg-font-color: #F0F0F0;
+$accent-color: orange;
 
 $fonts: "Novecento", "Novecento Light", "Novecento Bold", "Telegrama" , "Silkscreen";
 $headline-font: nth($fonts, 2);
@@ -9,10 +10,10 @@ $headline-font-size: 2.6em;
 $headline-font-spacing: 0.2em;
 
 $clock-font: nth($fonts, 4);
-$clock-font-size: 2.3em;
+$clock-font-size: 2.75em;
 
-$ampm-font-size: 0.5em;
-$ampm-offset: -15%;
+//$ampm-font-size: 0.5em;
+//$ampm-offset: -15%;
 
 $date-font-size: 0.7em;
 $date-font-weight: 100;
@@ -21,13 +22,14 @@ $widget-offset: 4%;
 
 $headline-margin: 12%;
 
-$block-bg-color: #F0F0F0;
+$main-bg-color: $bg-font-color;
+$block-bg-color: $accent-color;
 $block-font-color: slategrey;
 $block-font-size: 2.125em;
-$block-offset: 50px 5% 0 0;
+$block-offset: 50px 0% 0 0;
 
-$block-width: 200px;
+$block-width: 13%;
 $block-height: 300px;
 
-$link-font: nth($fonts, 3);
+$link-font: nth($fonts, 1);
 $link-font-size: 1.2em;
